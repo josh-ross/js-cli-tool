@@ -4,7 +4,9 @@ class RunCommand extends Command {
   async run() {
     const {flags} = this.parse(RunCommand)
     const name = flags.name || 'world'
-    this.log(`hello ${name} from /Users/joshross/Documents/Github/js-cli-tool/src/commands/run.js`)
+    this.log(
+      `hello ${name} from /Users/joshross/Documents/Github/js-cli-tool/src/commands/run.js`
+    )
   }
 }
 
